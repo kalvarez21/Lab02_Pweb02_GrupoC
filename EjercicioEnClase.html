@@ -29,11 +29,13 @@
             return Math.ceil(Math.random() * (max - min) + min);});
       }
       function voteCounting (votes) {
-        let n = Math.max(...votes) - 1;
+        let n = Math.max(...votes);
+        console.log(n);
         let counting = Array(n).fill(0);
         for (idx in votes) {
           counting[votes[idx]-1]++;
         }
+        console.log(counting);
         let maxVotes = 0;
         let winnerID = 0;
         for (id in counting) {
