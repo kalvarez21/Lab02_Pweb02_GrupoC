@@ -30,18 +30,16 @@
       }
       function voteCounting (votes) {
         let n = Math.max(...votes);
-        console.log(n);
         let counting = Array(n).fill(0);
         for (idx in votes) {
           counting[votes[idx]-1]++;
         }
-        console.log(counting);
         let maxVotes = 0;
         let winnerID = 0;
         for (id in counting) {
           if (counting[id] > maxVotes) {
             maxVotes = counting[id];
-            winnerID = id + 1;
+            winnerID = parseInt(id) + 1;
           }
         }
         return { id: winnerID, votes: maxVotes};
