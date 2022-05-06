@@ -5,4 +5,15 @@ body{
   height: 450px;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cuadro {
+  height: 40%;
+  width: auto;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
 }
