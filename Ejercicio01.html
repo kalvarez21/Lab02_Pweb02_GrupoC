@@ -8,6 +8,18 @@
     <title>Ejercicio 01</title>
   </head>
   <body>
-
+    <section class="container">
+      <div id="cuadro">
+      </div>
+    </section>
+    <script>
+      let ahora = new Date();
+      document.getElementById("cuadro").innerHTML = "<h3>Fecha actual: " + ahora + "</h3><br>"
+                                                    +"<h3>Estamos " +   diaSemana(ahora.getDay()) + "</h3>";
+      function diaSemana(diaNumero) {
+        let dias = ["domingo", "lunes", "martes", "miercoles", "jueves", "viernes", "sabado"];
+        return dias[diaNumero];
+      }
+    </script>
   </body>
 </html>
