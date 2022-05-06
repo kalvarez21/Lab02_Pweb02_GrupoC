@@ -8,14 +8,21 @@
   </head>
   <body>
   	<script>
-    	function arrayGenerator (n, min, max) {
+    	/*function arrayGenerator (n, min, max) {
     		let a = [];
         let x;
     		for(x = 0; x < n; x += 1) {
           a.push(Math.ceil(Math.random() * (max - min) + min));
     		}
         return a;
-    	}
+    	}*/
+      function arrayGenerator(n, min, max) {
+          let a = new Array(n).fill(0);
+          a.forEach(function (e, index) {
+              a[index] = Math.ceil(Math.random() * (max - min) + min);
+          });
+          return a;
+      }
       function arrayGeneratorMap (n, min, max) {
         let a = Array(n).fill(0);
         return a.map(function () {
