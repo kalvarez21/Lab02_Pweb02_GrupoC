@@ -16,7 +16,13 @@
       </div>
     </section>
     <script>
-
+      const DIA_AREQUIPA = new Date(2022, 07, 15);
+      let ahora = new Date();
+      //Se obtiene la diferencia de milisegundo de las fechas
+      let x = DIA_AREQUIPA - ahora;
+      //El resultado se transforma a dias
+      x = x / (1000.0 * 60 * 60 * 24);
+      document.getElementById("diaFaltante").innerHTML = Math.floor(x) + " dias";
     </script>
   </body>
 </html>
