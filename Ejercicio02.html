@@ -14,17 +14,18 @@
         <input type="text" id="txtBox" placeholder="Ingrese una palabra">
         <input type="button" id="invertirBtn" value="Invertir palabra" onclick="invertirPalabra()">
         <h2>PALABRA INVERTIDA: </h2>
-        <div id="resultado"></div>
+        <div id="resultado"> </div>
       </div>
     </section>
     <script>
       function invertirPalabra () {
         let word = document.getElementById("txtBox").value;
         let x;
-        for (x = 0; x < word.lenght; x++) {
-          word = word.substring(1) + word.charAt(0);
+        let wordInv = "";
+        for (x = word.length - 1; x >= 0; x--) {
+          wordInv += word.charAt(x);
         }
-        document.getElementById("Resultado").innerHTML = word;
+        document.getElementById("resultado").innerHTML = wordInv;
       }
     </script>
   </body>
