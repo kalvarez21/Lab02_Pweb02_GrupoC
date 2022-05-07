@@ -12,19 +12,30 @@
     <input type="number" id="cantidad" placeholder="Ingrese un numero del 0 - 100" style="width:250px">
     <input type="button" id="generarTabla" value="Generar Tabla" onclick="generadorDeTabla()">
     <div id="tabla"></div>
+    <div id="resultado"></div>
     <script>
       function generadorDeTabla () {
         let n = document.getElementById("cantidad").value;
         let html = "<table>\n"
-                 + "<th>Tabla de Numeros Aleatorios</th>";
+                 + "<tr><th>Tabla de Numeros Aleatorios</th></tr>";
         for( let x = 0; x < n; x++){
           html += "<tr><td>" + generarAleatorios() + "</td></tr>\n";
         }
         html += "</table>\n";
+        html += '<input type="button" id="calcular" value="Calcular Total" onclick="calcularTotal()">\n';
         document.getElementById("tabla").innerHTML = html;
       }
       function generarAleatorios() {
         return Math.floor(Math.random()*100 + 1);
+      }
+      function calcularTotal() {
+        let auxiliar = document.getElementByTagName("td");
+        let total = 0;
+        for(let i = 0; i < auxiliar.length ; i++){
+          total += parseInt(auxiliar[i].innerHTML);
+        }
+        let html = "<table><tr><th>TOTAL: </th>\n"
+                  +"<td>"+ total + "</td></tr></table>";
       }
     </script>
   </body>
