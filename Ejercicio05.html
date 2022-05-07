@@ -8,6 +8,24 @@
     <title>Ejercicio 05</title>
   </head>
   <body>
-
+    <h2>Ingrese cuantos numeros (0-100) desea generar para la tabla: </h2>
+    <input type="number" id="cantidad" placeholder="Ingrese un numero del 0 - 100" style="width:250px">
+    <input type="button" id="generarTabla" value="Generar Tabla" onclick="generadorDeTabla()">
+    <div id="tabla"></div>
+    <script>
+      function generadorDeTabla () {
+        let n = document.getElementById("cantidad").value;
+        let html = "<table>\n"
+                 + "<th>Tabla de Numeros Aleatorios</th>";
+        for( let x = 0; x < n; x++){
+          html += "<tr><td>" + generarAleatorios() + "</td></tr>\n";
+        }
+        html += "</table>\n";
+        document.getElementById("tabla").innerHTML = html;
+      }
+      function generarAleatorios() {
+        return Math.floor(Math.random()*100 + 1);
+      }
+    </script>
   </body>
 </html>
