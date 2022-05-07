@@ -5,14 +5,24 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author"content="Kevin Alvarez Astete"/>
+    <style>
+      table, th, td{
+        background-color: white;
+        border: 1px solid black;
+        text-align: center;
+      }
+      #calcular{
+        margin: 10px;
+      }
+    </style>
     <title>Ejercicio 05</title>
   </head>
   <body>
     <h2>Ingrese cuantos numeros (0-100) desea generar para la tabla: </h2>
     <input type="number" id="cantidad" placeholder="Ingrese un numero del 0 - 100" style="width:250px">
     <input type="button" id="generarTabla" value="Generar Tabla" onclick="generadorDeTabla()">
-    <div id="tabla"></div>
-    <div id="resultado"></div>
+    <center id="tabla"></center>
+    <center id="resultado"></center>
     <script>
       function generadorDeTabla () {
         let n = document.getElementById("cantidad").value;
@@ -24,6 +34,7 @@
         html += "</table>\n";
         html += '<input type="button" id="calcular" value="Calcular Total" onclick="calcularTotal()">\n';
         document.getElementById("tabla").innerHTML = html;
+        document.getElementById("resultado").innerHTML = "";
       }
       function generarAleatorios() {
         return Math.floor(Math.random()*100 + 1);
