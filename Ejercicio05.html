@@ -29,13 +29,14 @@
         return Math.floor(Math.random()*100 + 1);
       }
       function calcularTotal() {
-        let auxiliar = document.getElementByTagName("td");
+        let auxiliar = document.getElementsByTagName("td");
         let total = 0;
         for(let i = 0; i < auxiliar.length ; i++){
           total += parseInt(auxiliar[i].innerHTML);
         }
         let html = "<table><tr><th>TOTAL: </th>\n"
                   +"<td>"+ total + "</td></tr></table>";
+        document.getElementById("resultado").innerHTML = html;
       }
     </script>
   </body>
