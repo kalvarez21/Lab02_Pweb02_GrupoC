@@ -56,6 +56,20 @@
       <li>Revisar esta discusión en stackoverflow - <a href="https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript">https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript</a></li>
       <ul>
          <li>¿Cómo se pueden resolver los warnings?</li>
+         <ul>
+           <p>Ejercicio analizado en JSLint: </p>
+           <img src="https://i.ibb.co/NnNyhRy/Captura-de-pantalla-2022-05-09-083849.png">
+           <p>Warnings obtenidos: </p>
+           <img src="https://i.ibb.co/PMG0HKC/img02.png">
+           <p>Se puede observar que dos warnings se disparan. El primero se soluciona declarando la variable antes que el bucle, sin embargo el bucle
+           for requiere un cambio a for each un poco mas complejo. Para ello primero se debe tener un array con elementos y segundo se debe establecer
+           la funcion que se ejecutara para cada elementos, como se muestra en la siguiente imagen:</p>
+           <img src="https://i.ibb.co/TRrnfjq/img03.png">
+           <img src="https://i.ibb.co/nj56RKs/img04.png">
+           <p>Como se puede observar: al final solo nos presenta un unico warnings que nos indica que la variable "e" no se usa, sin embargo este 
+           algoritmo esta diseñado para evitar usar otro array, por lo que no es posible evitar ese error ya que es necesario el uso del segundo index
+           de la funcion dentro de for each para poder modificar los elementos del array</p>
+         </ul>
          <li>¿Se puede modificar la solución usando map? ¿Cómo?</li>
       </ul>
    </ul>
