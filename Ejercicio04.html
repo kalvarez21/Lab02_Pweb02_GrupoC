@@ -8,18 +8,24 @@
     <title>Ejercicio 04</title>
     <style>
       input {margin: 15px;}
+      #urlText{
+        width: 225px;
+      }
     </style>
   </head>
   <body>
     <section class="container">
       <div id="cuadro">
         <input type="text" id="urlText" placeholder="Ingrese una URL meet"><br>
-        <input type="button" id="quitarGuion" value="Eliminar Guiones">
+        <input type="button" id="btnQuitar" value="Eliminar Guiones" onclick="quitarGuion()">
         <h2 id="urlModificada"></h2>
       </div>
     </section>
     <script>
-
+      function quitarGuion(){
+        let url = document.getElementById("urlText").value.split("-").join("");
+        document.getElementById("urlModificada").innerHTML = url;
+      }
     </script>
   </body>
 </html>
