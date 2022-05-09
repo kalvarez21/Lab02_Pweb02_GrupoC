@@ -23,10 +23,11 @@
           });
           return a;
       }
-      function arrayGeneratorMap (n, min, max) {
-        let a = Array(n).fill(0);
+      function arrayGeneratorMap(n, min, max) {
+        let a = new Array(n).fill(0);
         return a.map(function () {
-            return Math.ceil(Math.random() * (max - min) + min);});
+            return Math.ceil(Math.random() * (max - min) + min);
+        });
       }
       function voteCounting (votes) {
         let n = Math.max(...votes);
