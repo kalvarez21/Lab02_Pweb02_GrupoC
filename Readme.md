@@ -90,9 +90,13 @@
    </ul>
    <h2>III. CONCLUSIONES</h2>
    <ul>
-      <li></li>
-      <li></li>
+      <li>Javascript es un lenguaje de programacion muy util que se complementa muy bien con HTML y CSS para el diseño de paginas web</li>
+      <li>Javascript presenta una curva de aprendizaje no tan empinado, por lo que resulta muy facil su comprendimiento y aplicacion en proyectos</li>
+      <li>JSLint resulta ser una herramienta muy util para el aprendizaje de estandares, sin embargo, puede llegar a ser muy estricto en algunas ocasiones</li>
    </ul>
    <h1>RETROALIMENTACION GENERAL</h1>
    <h1>REFERENCIA Y BIBLIOGRAFIA</h1>
-   <b><i></i></b>
+    <b><i>Javascript tutorial. https://www.w3schools.com/javascript/default.asp, 2021. Accesed: 02-09-2021.</i></b><br>
+    <b><i>Loiane Groner. Learning JavaScript Data Structures and Algorithms: Write complex and powerful</i></b><br> 
+    <b><i>Validador HTML - https://validator.w3.org/</i></b><br>
+    <b><i>Validador CSS - https://jigsaw.w3.org/css-validator/</i></b><br>
