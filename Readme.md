@@ -48,7 +48,17 @@
    <h1>SOLUCION Y RESULTADOS</h1>
    <h2>I. SOLUCION DE EJERCICIOS/PROBLEMAS</h2>
    <ul>
-    <li></li>
+    <li><h3>EJERCICIO 01</h3></li>
+    <img src="https://i.ibb.co/6NG5LWL/Ejercicio01.png">
+    <li><h3>EJERCICIO 02</h3></li>
+    <img src="https://i.ibb.co/qjgQ7c3/Ejercicio02.png">
+    <li><h3>EJERCICIO 03</h3></li>
+    <img src="https://i.ibb.co/FxzFgbK/Ejercicio03.png">
+    <li><h3>EJERCICIO 04</h3></li>
+    <img src="https://i.ibb.co/PFXkPwk/Ejercicio04.png">
+    <li><h3>EJERCICIO 05</h3></li>
+    <img src="https://i.ibb.co/74H15YR/Ejercicio05.png">
+    <li><h3>EJERCICIO 06: link del video : </h3></li>
    </ul>
    <h2>II. SOLUCION DE CUESTIONARIO</h2>
    <ul>
