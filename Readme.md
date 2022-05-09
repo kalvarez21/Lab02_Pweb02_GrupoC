@@ -71,6 +71,11 @@
            de la funcion dentro de for each para poder modificar los elementos del array</p>
          </ul>
          <li>¿Se puede modificar la solución usando map? ¿Cómo?</li>
+         <ul>
+           <p>Map es un herramienta mas util que for each ya que la funcion(callback) que utiliza modifica cada uno de los elementos del array sin
+           necesidad de crear otro array</p>
+           <img src="https://i.ibb.co/944Sjvd/img05.png">
+         </ul>
       </ul>
    </ul>
    <h2>III. CONCLUSIONES</h2>
