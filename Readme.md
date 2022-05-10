@@ -58,7 +58,7 @@
     <img src="https://i.ibb.co/PFXkPwk/Ejercicio04.png">
     <li><h3>EJERCICIO 05</h3></li>
     <img src="https://i.ibb.co/74H15YR/Ejercicio05.png">
-    <li><h3>EJERCICIO 06: link del video : </h3></li>
+    <li><h3>EJERCICIO 06: link del video - Explicacion JavaScript Sintaxis : <a href="https://flipgrid.com/e7e85e0e">https://flipgrid.com/e7e85e0e</a></h3></li>
    </ul>
    <h2>II. SOLUCION DE CUESTIONARIO</h2>
    <ul>
